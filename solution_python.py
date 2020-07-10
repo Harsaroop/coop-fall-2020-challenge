@@ -29,7 +29,7 @@ class EventSourcer():
         for i in range(steps):
             self.un = self.list.pop()
             self.value = self.value - self.un
-            self.list_un.append()
+            self.list_un.append(self.un)
 
     def bulk_redo(self, steps: int):
         for i in range(steps):
